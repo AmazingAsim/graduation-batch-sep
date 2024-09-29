@@ -1,0 +1,45 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+h1{
+    color:yellow;
+    background-color: black;
+}
+
+p{
+    color: red;
+}
+
+.batman{
+    color: blue;
+}
+
+.robin{
+    background-color: brown;
+}
+
+#sub_heading{
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 10px solid black;
+    margin: 20px auto;
+}
+
+
+
+
+
+.fashion p{
+    color: pink;
+}
+
+.fashion>p{
+    color:orange;
+}
+
