@@ -1,0 +1,38 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: space-between;
+    background-color: black;
+    background-image: url('https://miro.medium.com/v2/resize:fit:1200/1*GWm3FfkiehlanoOAub97vQ.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    background-color: rgba(0,0,0,0.5);
+}
+
+.nav-link:hover,.btn:hover{
+    background-color: white !important;
+    color: black !important;
+}
+
+.flexbox{
+    display: flex;
+    overflow: scroll;
+    gap: 10px;
+}
+
+.movieImage{
+    width: 20%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+
+}

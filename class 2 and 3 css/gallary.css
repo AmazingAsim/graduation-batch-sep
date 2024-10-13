@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+img {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.flexitem {
+    width: 33%;
+}
+
+nav {
+    padding: 20px;
+    background-image: url('https://easy-peasy.ai/cdn-cgi/image/quality=80,format=auto,width=700/https://fdczvxmwwjwpwbeeqcth.supabase.co/storage/v1/object/public/images/4501cce9-a7bd-4036-8f4e-a1f69179051c/31b77be5-6e09-448b-bad7-4ff8ab7bcc77.png');
+}
+
+nav a{
+    color:white;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+h1{
+    padding: 200px;
+    text-align: center;
+    background-image: url('https://121clicks.com/wp-content/uploads/2021/11/vacation_photographer_01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 3rem;
+}
