@@ -48,61 +48,193 @@
 
 //    // conditons statements
 
-let coin = 'copper'
+// let coin = 'copper'
 
-if(coin=='heads'){
-    console.log('heads');
-}
-else if(coin=='tails'){
-    console.log('tails');
-}
-else{
-    console.log('invalid coin value');
-}
+// if(coin=='heads'){
+//     console.log('heads');
+// }
+// else if(coin=='tails'){
+//     console.log('tails');
+// }
+// else{
+//     console.log('invalid coin value');
+// }
 
-let dice = 1000;
+// let dice = 1000;
 
-switch(dice){
-    case 1:
-        console.log('move one step');
-        break
-    case 2:
-        console.log('move two step');
-        break
-    case 3: 
-        console.log('move three steps');
-        break
-    default:
-        console.log('invalid dice value');
-}
+// switch(dice){
+//     case 1:
+//         console.log('move one step');
+//         break
+//     case 2:
+//         console.log('move two step');
+//         break
+//     case 3: 
+//         console.log('move three steps');
+//         break
+//     default:
+//         console.log('invalid dice value');
+// }
 
-let hungry = false;
+// let hungry = false;
  
-hungry? console.log('eat someting'): console.log('do something')
+// hungry? console.log('eat someting'): console.log('do something')
 
-// functions
-add(10,20)
-function add(a,b){
-    return a+b;
-    console.log('hu hahaah');
-}
+// // functions
+// let r = add(10,20)
+// function add(a,b){
+//     return a+b;
+//     console.log('hu hahaah');
+// }
 
-// anonymous function
+// // anonymous function
 
-jump();
-let jump = function (){
-    console.log('jump jump jump');
-}
+// let jump = function (){
+//     console.log('jump jump jump');
+// }
+
+// jump();
+
+// let result = add(10,20)
+//  console.log(result)
+
+//  // arrow function   a=>Math.round(a)
+//  let subtract = (a,b)=>{return Math.abs(a-b)}
+
+//  let Car = {
+//      name: 'BMW',
+//      start:function(){
+//         console.log(this)
+//      },
+//      stop:()=>{console.log(this)}
+//  }
+
+//  Car.stop()
 
 
+// higher order functions
 
-let result = add(10,20)
- console.log(result)
-// dom manipulation
-// events
-// objects
-// arrays
+setTimeout(function(){console.log('surprise')},5000)
+
+// callback functions.
+
+
 // loops
+
+// for loop  ,  white loop, for in loop, for of loop, map, filter , reduce
+
+// for(let i=0; i<=50;i+=5){
+//     console.log(i)
+// }
+
+// let hungry = true;
+
+// while(hungry){
+//     alert('eat pizza');
+//     hungry = confirm('press okay to eat something or press cancel to exit');
+// }
+
+// let pen = {
+//     color: 'black',
+//     ink:"red",
+//     price:"10"
+// }
+
+// for(let key in pen){
+//     console.log(pen[key])
+// }
+
+// let fruits = ['apple','mango','banana'];
+
+// for(let fruit of fruits){
+//     console.log(fruit)
+// }
+
+// let numbers = [1,2,3,4,5,6,7,8,9,10];
+// map
+// let result = numbers.map(function(n){
+//     return n*5
+// })
+
+// let odd = numbers.filter(n=>n%2!=0);
+// let even = numbers.filter(function(n){return n%2==0})
+// console.log(result);
+
+// reduce
+// let sum = numbers.reduce((a,b)=>a+b)
+// let product = numbers.reduce(function(total,current){return total*current})
+
+// dom manipulation  // document object model
+
+
+/// DOM --> document object model
+
+
+// let hello = document.getElementById('hello');
+// console.log(hello)
+// hello.innerHTML = 'bye bye'
+// hello.style.color = 'red';
+// let h3 = document.createElement('h3');
+// h3.innerHTML = 'added with javascript';
+// document.body.appendChild(h3);
+// document.body.removeChild(hello);
+
+// let subheaders = document.getElementsByClassName('subheader');
+
+// console.log(subheaders)
+
+// for(let subheader of subheaders){
+//     subheader.style.fontFamily = 'cursive';
+//     subheader.style.backgroundColor = 'blue';
+//     subheader.style.display = 'block';
+// }
+
+// subheaders[2].innerHTML = 'I am batman';
+
+// let asim = document.querySelector('.asim');
+// let allasim = document.querySelectorAll('.asim');
+// asim.style.color = 'red';
+
+// console.log(allasim);
+
+// for(let a of allasim){
+//     a.style.color = 'green';
+// }
+// events
+
+let name = ""
+function setName(e){
+ name = e.target.value;
+ document.getElementById('nameDisplay').innerHTML = name;
+}
+
+
+function setColor(e){
+    document.body.style.backgroundColor = e.target.value;
+}
+
+function submitData(){
+
+    document.getElementById('nameDisplay').innerHTML = name;
+    document.getElementById('nameDisplay').style.fontSize = '30px';
+    console.log({name:name})
+}
+
+let flag = true;
+
+let togglebtn = document.getElementById('toggle');
+
+togglebtn.addEventListener('click',function(){
+    let para = document.getElementById('para');
+    if(flag){
+        para.style.display = 'none';
+        flag = false;
+    }
+    else{
+        para.style.display = 'block';
+        flag = true;
+    }
+})
 
 // async javascript
 // how javascript works

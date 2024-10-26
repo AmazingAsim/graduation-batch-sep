@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+   <header>
+    <h1>Daily Task Manager</h1>
+    <p>Add  your daily tasks here and be productive</p>
+   </header>
+
+   <section>
+        <textarea id="taskname"></textarea>
+        <button onclick="addTask()">Add</button>
+   </section>
+
+   <table id="tasklist">
+    <thead>
+         <td>#srno</td>
+         <td>task</td>
+         <td>action</td>
+    </thead>
+    <tbody id="tasklist"></tbody>
+   </table>
+
+</body>
+</html>
