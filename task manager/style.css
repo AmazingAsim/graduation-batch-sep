@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    text-align: center;
+    background-color: peachpuff;
+    color: brown;
+    padding: 20px;
+    text-shadow: 2px 2px 4px coral;
+}
+
+section{
+    width: 50%;
+    margin:20px auto;
+}
+textarea,button{
+    display: block;
+    margin:10px 0px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+section button{
+    background-color: gray;
+    color:peachpuff;
+}
+
+table{
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+tr,td{
+  border-top: 1px solid gray;
+}
+thead{
+    background-color: peachpuff;
+    color: brown;
+}
+
+tr td button{
+    background-color: red;
+    color: white;
+    width: 50%;;
+}
+
+body{
+    background-image: linear-gradient(peachpuff,lightgray);
+    height: 100vh;
+    background-attachment: fixed;
+}

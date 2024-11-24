@@ -114,7 +114,6 @@
 
 // higher order functions
 
-setTimeout(function(){console.log('surprise')},5000)
 
 // callback functions.
 
@@ -124,21 +123,21 @@ setTimeout(function(){console.log('surprise')},5000)
 // for loop  ,  white loop, for in loop, for of loop, map, filter , reduce
 
 // for(let i=0; i<=50;i+=5){
-//     console.log(i)
-// }
-
-// let hungry = true;
-
-// while(hungry){
-//     alert('eat pizza');
-//     hungry = confirm('press okay to eat something or press cancel to exit');
-// }
-
-// let pen = {
-//     color: 'black',
-//     ink:"red",
-//     price:"10"
-// }
+    //     console.log(i)
+    // }
+    
+    // let hungry = true;
+    
+    // while(hungry){
+        //     alert('eat pizza');
+        //     hungry = confirm('press okay to eat something or press cancel to exit');
+        // }
+        
+        // let pen = {
+            //     color: 'black',
+            //     ink:"red",
+            //     price:"10"
+            // }
 
 // for(let key in pen){
 //     console.log(pen[key])
@@ -198,43 +197,93 @@ setTimeout(function(){console.log('surprise')},5000)
 // console.log(allasim);
 
 // for(let a of allasim){
-//     a.style.color = 'green';
+    //     a.style.color = 'green';
+    // }
+    // events
+    
+    // let name = ""
+    // function setName(e){
+        //  name = e.target.value;
+//  document.getElementById('nameDisplay').innerHTML = name;
 // }
-// events
-
-let name = ""
-function setName(e){
- name = e.target.value;
- document.getElementById('nameDisplay').innerHTML = name;
-}
 
 
-function setColor(e){
-    document.body.style.backgroundColor = e.target.value;
-}
+// function setColor(e){
+    //     document.body.style.backgroundColor = e.target.value;
+    // }
+    
+    // function submitData(){
+        
+    //     document.getElementById('nameDisplay').innerHTML = name;
+    //     document.getElementById('nameDisplay').style.fontSize = '30px';
+//     console.log({name:name})
+// }
 
-function submitData(){
+// let flag = true;
 
-    document.getElementById('nameDisplay').innerHTML = name;
-    document.getElementById('nameDisplay').style.fontSize = '30px';
-    console.log({name:name})
-}
+// let togglebtn = document.getElementById('toggle');
 
-let flag = true;
+// togglebtn.addEventListener('click',function(){
+    //     let para = document.getElementById('para');
+    //     if(flag){
+        //         para.style.display = 'none';
+        //         flag = false;
+        //     }
+        //     else{
+            //         para.style.display = 'block';
+            //         flag = true;
+            //     }
+            // })
+            
+            // function f1(){
+                //     f2()
+                // }
+                
+                // function f2(){
+                    //   f3()
+                    // }
+                    
+                    // function f3(){
+                        //   console.log('last')
+// }
 
-let togglebtn = document.getElementById('toggle');
+// f1();
 
-togglebtn.addEventListener('click',function(){
-    let para = document.getElementById('para');
-    if(flag){
-        para.style.display = 'none';
-        flag = false;
-    }
-    else{
-        para.style.display = 'block';
-        flag = true;
-    }
-})
 
 // async javascript
 // how javascript works
+
+
+// setTimeout(function(){
+//     console.log('surprise');
+//     setTimeout(function(){console.log('good bye')},1000);
+// },1000);
+
+
+// console.log('hello')
+// console.log('jello')
+// console.log('mello')
+// console.log('yello')
+
+// promises
+
+// let marks = 90;
+
+// let iPhone = new Promise(function(res,rej){
+//     if(marks>=90){
+//         setTimeout(function(){res('new I phone')},5000)
+//     }
+//     else{
+//         rej('no phone now')
+//     }
+// });
+
+
+// iPhone.then(function(res){console.log(res)}).catch(function(err){console.log(err)}).finally(function(){ console.log('finally');})
+
+
+let data = fetch('https://jsonplaceholder.typicode.com/users')
+
+data
+.then(function(res){return res.json()})
+.then(function(res){console.log(res)});

@@ -1,0 +1,18 @@
+@import url('../node_modules/bootstrap');
+
+#coinElement{
+    animation-name: flip;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+}
+
+
+@keyframes flip{
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(720deg);
+    }
+}

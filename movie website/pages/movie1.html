@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="movieTitle">movie 1</h1>
+
+    <script>
+        async function getMovie(){
+            let res = await fetch('https://ghibliapi.vercel.app/films/2baf70d1-42bb-4437-b551-e5fed5a87abe');
+            res = await res.json();
+            document.getElementById('movieTitle').innerHTML = res.title;
+        }
+
+        getMovie();
+    </script>
+</body>
+</html>
